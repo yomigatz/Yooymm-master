@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="yooymm.com.MainActivity">
+
+    <!--<TextView-->
+        <!--android:id="@+id/sample_text"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Hello World!"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+    <LinearLayout
+        android:id="@+id/ll_puzzle_main_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dip">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#F77789"
+            android:text="123456"
+            android:textSize="30px"/>
+        <TextView
+            android:id="@+id/tv_puzzle_main_type_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/text_click"
+            android:textColor="#FF0099"
+            android:text="888888"
+            android:textSize="30px"/>
+    </LinearLayout>
+    <GridView
+        android:id="@+id/gv_xpuzzle_main_pic_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_puzzle_main_spinner"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20px"
+        android:gravity="center_horizontal"
+        android:horizontalSpacing="10px"
+        android:numColumns="4"
+        android:padding="5px"
+        android:verticalSpacing="5px"></GridView>
+</RelativeLayout>
