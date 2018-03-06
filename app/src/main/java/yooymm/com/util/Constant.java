@@ -9,9 +9,11 @@ package yooymm.com.util;
  */
 
 public class Constant {
-
+    //数据库名
     public static final String DATABASE_NAME =  "yooymmDB.db";
+    //数据库版本
     public static final int DATABASE_VERSION= 1;
+
     public static final String TABLE_NAME = "person";
     public static final String _ID = "_id";
     public static final String NAME = "name";

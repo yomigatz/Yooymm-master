@@ -24,12 +24,15 @@ public class YooymmSqliteHelper extends SQLiteOpenHelper {
 	}
 
 	@Override
-	public void onCreate(SQLiteDatabase sqLiteDatabase) {
-
+	public void onCreate(SQLiteDatabase db) {
+		//创建表
+		db.execSQL(Constant.CREATE_PROVINCE);
+		db.execSQL(Constant.CREATE_CITY);
+		db.execSQL(Constant.CREATE_COUNTY);
 	}
 
 	@Override
-	public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
+	public void onUpgrade(SQLiteDatabase db, int i, int i1) {
 
 	}
 }
