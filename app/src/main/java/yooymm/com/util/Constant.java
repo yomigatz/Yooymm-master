@@ -10,7 +10,7 @@ package yooymm.com.util;
 
 public class Constant {
 
-    public static final String DATABASE_NAME =  "yooymm.db";
+    public static final String DATABASE_NAME =  "yooymmDB.db";
     public static final int DATABASE_VERSION= 1;
     public static final String TABLE_NAME = "person";
     public static final String _ID = "_id";
